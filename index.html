@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Happy Birthday My Love ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    overflow:hidden;
+    background:linear-gradient(135deg,#ff4b91,#ff8fab,#ffc2d1);
+    height:100vh;
+    color:white;
+}
+
+/* FIREWORKS */
+.fireworks, .fireworks::before, .fireworks::after{
+    content:"";
+    position:absolute;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    box-shadow:
+    0 -120px #fff,
+    120px 0 #fff,
+    -120px 0 #fff,
+    0 120px #fff,
+    85px 85px #fff,
+    -85px 85px #fff,
+    85px -85px #fff,
+    -85px -85px #fff;
+    animation: boom 2s infinite ease-in-out;
+}
+
+.fireworks{
+    top:50%;
+    left:50%;
+}
+
+.fireworks::before{
+    top:-250px;
+    left:-200px;
+    animation-delay:0.5s;
+}
+
+.fireworks::after{
+    top:200px;
+    left:200px;
+    animation-delay:1s;
+}
+
+@keyframes boom{
+    0%{
+        transform:scale(0.1);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1.4);
+        opacity:0;
+    }
+}
+
+.page{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hidden{
+    display:none;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    padding:35px;
+    border-radius:25px;
+    backdrop-filter:blur(12px);
+    max-width:850px;
+    box-shadow:0 0 25px rgba(255,255,255,0.3);
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.buttons{
+    margin-top:30px;
+    position:relative;
+    height:200px;
+}
+
+button{
+    padding:15px 30px;
+    margin:15px;
+    border:none;
+    border-radius:50px;
+    font-size:1.1rem;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.yes{
+    background:#fff;
+    color:#ff2e74;
+}
+
+.no{
+    background:#ff1744;
+    color:white;
+    position:absolute;
+}
+
+.emoji{
+    font-size:2rem;
+    animation:bounce 2s infinite;
+    display:inline-block;
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-12px);}
+}
+
+.final{
+    animation:zoom 1s ease;
+}
+
+@keyframes zoom{
+    from{
+        transform:scale(0);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.cute{
+    font-size:3rem;
+    margin-top:20px;
+    animation:dance 1s infinite alternate;
+}
+
+@keyframes dance{
+    from{
+        transform:rotate(-10deg) translateY(0);
+    }
+    to{
+        transform:rotate(10deg) translateY(-10px);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="fireworks"></div>
+
+<!-- MUSIC -->
+<audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=romantic-love-11786.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PAGE 1 -->
+<div class="page" id="page1">
+    <div class="card">
+        <h1>❤️ Quiz Time Baby ❤️</h1>
+        <p style="font-size:1.6rem;">Do You Love Me? 🥺💖</p>
+
+        <div class="buttons">
+            <button class="yes" onclick="nextPage()">Yes 😍</button>
+            <button class="yes" onclick="nextPage()">Ofcourse Yes 💘</button>
+            <button class="no" id="noBtn">No 😒</button>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page hidden" id="page2">
+    <div class="card">
+        <h1>🎂 Happy Birthday My Love ❤️</h1>
+
+        <p>
+            💖 You are the best in this world 💖<br><br>
+
+            Sorry for late wish 😭❤️<br>
+            I always try to make you feel special but everytime I do something wrong... 🥺<br>
+            But I really love you and I'm always there for you 💞<br><br>
+
+            Main bs humesha tume khush dekhna chahta hu 💕<br>
+            Humesha tumhare pass rehna chahta hu 🫶<br>
+            Tum bs humesha mere sath rehna, mujhse pyaar krna 💖<br>
+            Mujhe or kuch nhi chahiye 😭❤️<br><br>
+
+            Kabhi socha nhi tha itna pyaar krne wali milegi 🥹💘<br>
+            Jab tum mere sath hoti ho to main duniya ka sbse khushnaseeb insaan hota hu 🌍❤️<br>
+            Main bohot khush rehta hu aapke sath 💞<br><br>
+
+            Aap ko humesha sari khushiya mile 🎀✨<br>
+            Is birthday aap ki sari wish puri ho 🎂🌸<br>
+            Aap humesha khush raho 💖<br>
+            Mere hise ki bhi sari khushiyan aapko mile 🫶💫<br><br>
+
+            I love you so much meri moti 🐼❤️<br>
+            Main humesha aapke sath rahunga meri jaan 💞<br>
+            Aap humesha khush raho 🌹💖
+        </p>
+
+        <div style="margin-top:30px;">
+            <h2>Do You Like This? 🥺💘</h2>
+            <button class="yes" onclick="finalPage()">Yes 😍</button>
+            <button class="yes">No ❌</button>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page hidden final" id="page3">
+    <div class="card">
+        <h1>🎉 YAYYYY 🎉</h1>
+
+        <div class="cute">
+            🎂 🎊 🐼 💃 🕺 🎉 🐼 💖 🎈
+        </div>
+
+        <h2 style="margin-top:25px;">
+            Happiest Birthday To My Cutieee ❤️
+        </h2>
+
+        <p style="margin-top:20px;">
+            🐼💖 Party Time Baby 💖🐼<br>
+            Forever Together 💞✨
+        </p>
+
+        <div class="cute">
+            🐼🎂🎉💃🕺🎊💖🎈🐼
+        </div>
+    </div>
+</div>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", () => {
+    const x = Math.floor(Math.random() * 300) - 150;
+    const y = Math.floor(Math.random() * 200) - 100;
+
+    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+});
+
+function nextPage(){
+    document.getElementById("page1").classList.add("hidden");
+    document.getElementById("page2").classList.remove("hidden");
+}
+
+function finalPage(){
+    document.getElementById("page2").classList.add("hidden");
+    document.getElementById("page3").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
